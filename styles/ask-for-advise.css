@@ -1,0 +1,102 @@
+.main-advice {
+	margin-top: 2.5rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.ask-for-advice {
+	width: 100%;
+	max-width: 1080px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: #eee;
+}
+
+.ask-for-advice article {
+	padding: 1.875rem;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.875rem;
+}
+
+.advice {
+	font-size: 1.875rem;
+	line-height: 3rem;
+	font-weight: 700;
+
+	color: var(--verde-escuro);
+}
+
+.cite {
+	font-size: 1.375rem;
+	text-align: right;
+
+	margin-right: 4.375rem;
+	
+	color: gray;
+}
+
+.img-turtle-advice {
+	width: 500px;
+	height: 400px;
+}
+
+.btn-ask-for-other-advice {
+	margin-top: 1.875rem;
+	
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+
+	font-size: 1rem;
+	font-weight: 700;
+
+	color: var(--branco);
+	background-color: var(--verde-escuro);
+
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 1080px) {
+	.ask-for-advice {
+		width: 330px;
+		height: 430px;
+		flex-direction: column-reverse;
+	}
+
+	.ask-for-advice article {
+		padding: 0.625rem;
+
+		gap: 0.625rem;
+	}
+
+	.advice{
+		text-align: center;
+	}
+
+	.cite {
+		text-align: right;
+	}
+
+	.img-turtle-advice {
+		width: 100%;
+		height: 375px;
+	}
+
+	.advice {
+		font-size: 1.5rem;
+		line-height: 1.75rem;	
+	}
+
+	.cite {
+		font-size: 1.25rem;
+		margin-right: 4.375rem;
+	}
+}
